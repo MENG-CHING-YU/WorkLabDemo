@@ -13,7 +13,7 @@ public class ProductDAO {
 
 	
 	public List<Product> searchAllFields(String keyword) {
-		if (keyword == null) keyword = "";
+		
 		String q = "%" + keyword.toLowerCase() + "%";
 		String hql = "from Product  where "
 				+ "lower(productName) like :q "

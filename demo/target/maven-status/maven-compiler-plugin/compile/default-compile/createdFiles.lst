@@ -1,0 +1,6 @@
+com\kevin\productsearch\Main.class
+com\kevin\productsearch\service\ProductService.class
+com\kevin\productsearch\dao\ProductDAO.class
+com\kevin\productsearch\model\Product.class
+com\kevin\productsearch\utils\HibernateUtil.class
+com\kevin\productsearch\controller\ProductSearchServlet.class

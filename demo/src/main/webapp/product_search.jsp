@@ -152,7 +152,7 @@ prefix="c"%>
         <c:if test="${empty products}">
           <div class="no-results">
             <c:if test="${empty currentKeyword}">
-              尚無商品資料。請先新增商品。
+              尚無商品資料。請先新增商品
             </c:if>
             <c:if test="${not empty currentKeyword}">
               查無符合 "<span class="keyword-display">${currentKeyword}</span>"

@@ -20,36 +20,6 @@
 
 - **Apache Tomcat **
 
----
-
-## 📁 專案結構
-
-````
-demo/
-├── pom.xml                                          # Maven 配置檔
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/kevin/productsearch/
-│   │   │       ├── controller/
-│   │   │       │   └── ProductSearchServlet.java   # 搜尋 Servlet
-│   │   │       ├── service/
-│   │   │       │   └── ProductService.java         # 業務邏輯層
-│   │   │       ├── dao/
-│   │   │       │   └── ProductDAO.java             # 資料存取層
-│   │   │       ├── model/
-│   │   │       │   └── Product.java                # 商品實體類別
-│   │   │       └── utils/
-│   │   │           └── HibernateUtil.java          # Hibernate 工具類別
-│   │   ├── resources/
-│   │   │   └── hibernate.cfg.xml                   # Hibernate 配置檔
-│   │   └── webapp/
-│   │       └── product_search.jsp                  # 搜尋頁面
-└── README.md                                        # 專案說明文件
-
-
----
-
 ## 📦 資料庫設定
 
 ### 1. 建立資料庫
@@ -100,7 +70,7 @@ cd demo
 
 # 2. 清理、編譯、打包並啟動 Tomcat
 mvn clean package cargo:run
-````
+```
 
 ### 啟動過程說明
 

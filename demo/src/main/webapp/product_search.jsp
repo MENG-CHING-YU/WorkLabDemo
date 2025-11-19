@@ -96,7 +96,7 @@ prefix="c"%>
       <!-- 搜尋表單 -->
       <div class="search-box">
         <form
-          action="/demo/search"
+          action="${pageContext.request.contextPath}/"
           method="get"
           style="display: flex; gap: 10px"
         >
@@ -108,7 +108,9 @@ prefix="c"%>
           />
           <button type="submit">搜尋</button>
           <!-- 重置按鈕，清空 keyword -->
-          <a href="/demo/search"><button type="button">重置</button></a>
+          <a href="${pageContext.request.contextPath}/"
+            ><button type="button">重置</button></a
+          >
         </form>
       </div>
 

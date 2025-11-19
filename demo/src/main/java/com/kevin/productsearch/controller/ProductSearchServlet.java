@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet("/search") 
+@WebServlet(urlPatterns = {"/search", ""})
 public class ProductSearchServlet extends HttpServlet {
     
    

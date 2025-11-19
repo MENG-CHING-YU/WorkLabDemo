@@ -93,7 +93,6 @@ prefix="c"%>
     <div class="container">
       <h1>🔍 商品搜尋系統</h1>
 
-      <!-- 搜尋表單 -->
       <div class="search-box">
         <form
           action="${pageContext.request.contextPath}/"
@@ -107,14 +106,13 @@ prefix="c"%>
             value="${currentKeyword != null ? currentKeyword : ''}"
           />
           <button type="submit">搜尋</button>
-          <!-- 重置按鈕，清空 keyword -->
+
           <a href="${pageContext.request.contextPath}/"
             ><button type="button">重置</button></a
           >
         </form>
       </div>
 
-      <!-- 搜尋結果 -->
       <div class="results">
         <c:if test="${not empty products}">
           <c:if test="${not empty currentKeyword}">
